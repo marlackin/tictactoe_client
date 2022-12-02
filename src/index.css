@@ -1,13 +1,117 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  color: rgb(25, 238, 89);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ol, ul {
+  padding-left: 30px;
+}
+
+.form-group {
+  padding: 10px 0;
+}
+
+label {
+  width: 100%;
+  display: block;
+  padding: 5px 0;
+}
+
+input[type='text'] {
+  width: 82%;
+  height: 30px;
+  font-size: x-large;
+  padding: 10px;
+  border: 2px solid rgb(25, 238, 89);
+  border-radius: 5px;
+  color: rgb(25, 238, 89);
+  font-family: cursive;
+}
+div#container {
+  padding: 10px 10px;
+}
+#box h2 {
+  font-family: cursive;
+  font-size: 25px;
+  color: rgb(25, 238, 89);
+}
+#box .btn{
+  width: 150px;
+  height: 43px;
+  border-radius: 5px;
+  border: 2px solid #009688;
+  background: rgb(25, 238, 89);
+  color: black;
+  font-weight: bold;
+  font-size: medium;
+  margin-top: 10px;
+}
+div#box {
+  background-color: rgb(5, 23, 71);
+  border: 3px solid black;
+  padding: 10px 30px;
+  border-radius: 15px;
+  margin: 0 auto;
+  width: 80%;
+  height: 350px;
+}
+.col50 {
+  float: left;
+  width: 50%;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+margin-bottom: 10px;
+}
+
+.game-board {
+  width: 40%;
+  padding: 20px 0px;
+}
+.game-info {
+  padding: 20px 0;
+}
+.game-info .game-status{
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+.square {
+  background: #fff;
+  border: 2px solid #607D8B;
+  float: left;
+  line-height: 84px;
+  font-weight: bold;
+  height: 84px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 84px;
+  font-size: 54px;
+}
+.square:hover {
+  background: #bdbdbd;
+}
+.square:focus {
+outline: none;
+}
+
+.kbd-navigation .square:focus {
+background: #ddd;
+}
+
+.game {
+display: flex;
+flex-direction: row;
+}
+
+.game-info {
+margin-left: 20px;
 }
